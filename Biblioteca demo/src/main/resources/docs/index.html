@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explora y prueba la API de Biblioteca: autores, libros y sus relaciones.">
+    <title>Biblioteca · Documentación API</title>
+    <link rel="stylesheet" href="../swagger-ui/swagger-ui.css">
+    <link rel="stylesheet" href="./biblioteca.css">
+    <script src="../swagger-ui/swagger-ui-bundle.js" defer></script>
+    <script src="./biblioteca.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#explorador">Saltar a los endpoints</a>
+<header class="topbar">
+    <a class="brand" href="./index.html" aria-label="Biblioteca, inicio"><span class="brand-icon" aria-hidden="true">B</span> Biblioteca <span class="brand-divider">/</span> <span class="brand-subtitle">Developers</span></a>
+    <a class="source-link" href="../v3/api-docs" target="_blank" rel="noopener">OpenAPI JSON <span aria-hidden="true">↗</span></a>
+</header>
+<main>
+    <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+            <p class="eyebrow">DOCUMENTACIÓN INTERACTIVA</p>
+            <h1 id="page-title">Cada historia empieza<br>con una <em>conexión.</em></h1>
+            <p class="intro">Conecta autores y libros. Explora las operaciones de Biblioteca y prueba tu primera solicitud desde aquí.</p>
+            <a class="primary-link" href="#explorador">Explorar la API <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="quickstart" aria-label="Inicio rápido">
+            <span class="card-label">TU PRIMER RECORRIDO</span>
+            <ol>
+                <li><span>01</span><div><strong>Crea un autor</strong><code>POST /api/autores</code></div></li>
+                <li><span>02</span><div><strong>Agrega su primer libro</strong><code>POST /api/libros</code><small>Usa el ID del autor en <b>autorId</b>.</small></div></li>
+                <li><span>03</span><div><strong>Consulta tu biblioteca</strong><code>GET /api/autores</code></div></li>
+            </ol>
+        </aside>
+    </section>
+    <section class="workspace" id="explorador" aria-labelledby="explorer-title">
+        <div class="section-heading"><div><p class="eyebrow">REFERENCIA</p><h2 id="explorer-title">Explora la API</h2></div><span class="protocol">REST · JSON</span></div>
+        <p class="usage-note">Abre una operación y pulsa <strong>Try it out</strong> → <strong>Execute</strong>. Las operaciones POST guardan datos en la base conectada.</p>
+        <div id="load-status" role="status" aria-live="polite">Cargando la documentación…</div>
+        <div id="swagger-ui"></div>
+        <noscript>Activa JavaScript para usar el explorador interactivo. También puedes consultar el <a href="../v3/api-docs">documento OpenAPI</a>.</noscript>
+    </section>
+</main>
+<footer><span>Biblioteca <span aria-hidden="true">/</span> API para autores y libros</span><a href="../swagger-original.html">Vista estándar de Swagger ↗</a></footer>
+</body>
+</html>
